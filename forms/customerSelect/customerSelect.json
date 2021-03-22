@@ -16,15 +16,6 @@
         "forms",
         "customerSelect",
         "Elements",
-        "btnCustomers.json"
-      ]
-    },
-    {
-      "!type": "External",
-      "file": [
-        "forms",
-        "customerSelect",
-        "Elements",
         "txtaDisplayCustomers.json"
       ]
     },
