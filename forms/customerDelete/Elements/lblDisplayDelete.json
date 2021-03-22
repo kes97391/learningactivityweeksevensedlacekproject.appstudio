@@ -19,7 +19,7 @@
   "hidden": "",
   "id": "lblDisplayDelete",
   "labelStyle": "text",
-  "left": 119,
+  "left": 57,
   "mAll": "",
   "mBottom": "",
   "mLeft": "",
@@ -42,7 +42,7 @@
   "right": "auto",
   "script": "",
   "style": "",
-  "top": 79,
+  "top": 377,
   "value": "Display Deletion",
   "width": "auto"
 }

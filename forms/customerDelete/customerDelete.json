@@ -43,7 +43,7 @@
         "forms",
         "customerDelete",
         "Elements",
-        "Label2.json"
+        "lblErrorMessage.json"
       ]
     }
   ],
