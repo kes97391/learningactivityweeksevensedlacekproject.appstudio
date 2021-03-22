@@ -45,6 +45,15 @@
         "Elements",
         "lblErrorMessage.json"
       ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerDelete",
+        "Elements",
+        "txtaDisplayCustomer.json"
+      ]
     }
   ],
   "class": "",

@@ -2,20 +2,28 @@
 customerDelete.onshow=function(){
   query = "SELECT * FROM customer"
   req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=kes97391&pass=" + pw + "&database=kes97391&query=" + query)
-  
-  if (req.status == 200) { //transit worked.
-        allCustomerData = JSON.parse(req.responseText)  // parse data in an array
-        console.log(allCustomerData)
-    } else {
-        // transit error
-        lblErrorMessage.value = `Error: ${req.status}`
+
+   if (req.status == 200) { //transit trip worked. 
+        results = JSON.parse(req.responseText)
+        console.log(results)
+        if (results.length == 0)    
+           lblErrorMessage.value = "There are no customers in the database."
+        else {        
+           let message = ""
+           for (i = 0; i < results.length; i++)
+               message = message + results[i][1] + "\n"
+           txtaDisplayCustomer.value = message
+        } // end else
+
+    } else   // the transit didn't work - bad wifi? server turned off?
+        lblErrorMessage.value = "Error code: " + req.status
 }
 
 btnSubmitDelete.onclick=function(){
     let customerNameDel = inptDeleteHere.value
     let found = false
-    for (i = 0; i < allCustomerData.length; i++) {
-        if (customerNameDel == allCustomerData[i][1]){
+    for (i = 0; i < results.length; i++) {
+        if (customerNameDel == results[i][1]){
             found = true
             break 
         }
@@ -31,8 +39,8 @@ btnSubmitDelete.onclick=function(){
             else
                 lblDisplayDelete.value = `There was a problem deleting ${customerNameDel} from the database.`
       else
-        lblMessage5.textContent = `Error: ${req.status}`
+        lblDisplayDelete.textContent = `Error: ${req.status}`
     } 
 }
-}
+
 
