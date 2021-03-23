@@ -55,8 +55,8 @@
           "!type": "External",
           "file": [
             "forms",
-            "customerAddress",
-            "customerAddress.json"
+            "customerUpdate",
+            "customerUpdate.json"
           ]
         }
       ],
