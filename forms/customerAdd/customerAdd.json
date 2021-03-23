@@ -16,7 +16,7 @@
         "forms",
         "customerAdd",
         "Elements",
-        "Input1.json"
+        "inptCustomerName.json"
       ]
     },
     {
@@ -25,7 +25,7 @@
         "forms",
         "customerAdd",
         "Elements",
-        "Input2.json"
+        "inptStreet.json"
       ]
     },
     {
@@ -34,7 +34,52 @@
         "forms",
         "customerAdd",
         "Elements",
-        "Input3.json"
+        "inptCity.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "inptState.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "inptZipcode.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "txtaAddCustomer.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "btnAddCustomer.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "lblCustomerAdd.json"
       ]
     }
   ],
@@ -52,7 +97,7 @@
   "onhide": "",
   "onkeypress": "",
   "onresize": "",
-  "onshow": "",
+  "onshow": "customerAdd.onshow()",
   "openMode": "none",
   "parentForm": "",
   "position": "absolute",

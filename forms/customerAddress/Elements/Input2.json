@@ -25,14 +25,14 @@
   "footer": "",
   "header": "Input",
   "headerCols": 2,
-  "height": 73,
+  "height": "auto",
   "hidden": "",
   "icon": "",
   "iconTitle": "",
   "id": "Input2",
   "inputType": "text",
   "inputmode": "",
-  "left": 18,
+  "left": 29,
   "leftText": "",
   "mAll": "",
   "mBottom": "",
@@ -82,9 +82,9 @@
   "spellcheck": "true",
   "step": "",
   "style": "",
-  "top": 92,
+  "top": 155,
   "validation": "",
   "value": "",
   "valueCols": 10,
-  "width": 248
+  "width": "auto"
 }
